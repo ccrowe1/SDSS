@@ -1,3 +1,5 @@
+What is the color-magnitude distribution (e.g., ‘g’ vs. ‘g-r’) of the quasar sample for different redshift bins?
+
 for i in range(0,5):
  d = tbdata[(tbdata[idx] >= i) & (tbdata[idx] < (i + 1))]
  d = d['PSFMAG']
