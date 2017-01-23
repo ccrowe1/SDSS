@@ -1,3 +1,8 @@
 a, counts = np.unique(tbdata['BAL_FLAG_VI'], return_counts=True)
 print('\n' + str(numquasars - counts[0]) + ' BAL quasars were previously observed in SDSS')
 #29580 BAL quasars were previously observed in SDSS
+
+BAL = numquasars - counts[0]
+PERCENT = BAL/numquasars
+print(PERCENT*100)
+#9.94951244698
