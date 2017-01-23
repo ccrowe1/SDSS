@@ -1,0 +1,3 @@
+a, counts = np.unique(tbdata['BAL_FLAG_VI'], return_counts=True)
+print('\n' + str(numquasars - counts[0]) + ' BAL quasars were previously observed in SDSS')
+#29580 BAL quasars were previously observed in SDSS
