@@ -1,4 +1,4 @@
-for i in xrange(0,5):
+for i in range(0,5):
  d = tbdata[(tbdata[idx] >= i) & (tbdata[idx] < (i + 1))]
  d = d['PSFMAG']
  d = d[(d[:,1] > 0) & (d[:,2] > 0)]
