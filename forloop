@@ -1,0 +1,12 @@
+for i in xrange(0,5):
+d = tbdata[(tbdata[idx] >= i) & (tbdata[idx] < (i + 1))]
+d = d['PSFMAG']
+d = d[(d[:,1] > 0) & (d[:,2] > 0)]
+g = d[:,1]
+r = d[:,2]
+plt.scatter(g - r, g)
+plt.title(' redshift bin [' + str(i) + ' < z < ' + str(i+1) + ']')
+plt.ylim(reversed(plt.ylim()))
+plt.xlabel("$g-r$", fontsize=20)
+plt.ylabel("$g$", fontsize=20)
+plt.show()
